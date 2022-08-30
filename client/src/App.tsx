@@ -1,21 +1,31 @@
-import { Navbar, Welcome, Footer, Services, Transactions } from "./components"
+import styles from './style';
+import {Navbar, Billing, CardDeal, Business, Clients, CTA, Stats, Footer, Testimonials, Hero,} from './components';
 
-const App = () => {
-	return (
-		<div><div className="min-h-screen">
-			<div className="bg-gradient-to-r from-green-400 to-blue-500">
+const App = () => (
+	<div className="bg-primary w-full overflow-hidden">
+		<div className={`${styles.paddingX} ${styles.flexCenter}`}>
+			<div className={`${styles.boxWidth}`}>
 				<Navbar />
-				<Welcome />
 			</div>
-			<Services />
-			<Transactions />
-			<Footer />
 		</div>
-		<button type="button" className="bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500">
- 			Hover me
-		</button>
+		<div className={`bg-primary ${styles.flexStart}`}>
+			<div className={`${styles.boxWidth}`}>
+				<Hero />
+			</div>
 		</div>
-	);
-}
+		<div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+			<div className={`${styles.boxWidth}`}>
+				<Stats />
+				<Business />
+				<Billing />
+				<CardDeal />
+				<Testimonials />
+				<Clients />
+				<CTA />
+				<Footer />
+			</div>
+		</div>
+	</div>
+);
 
 export default App;
