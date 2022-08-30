@@ -17,3 +17,6 @@ h1. Ajustement position
 
 h1. padding
 * p{t|r|b|l|x|y|empty}-{size} = padding top/right/bottom/left/x axis/y axis /empty : all side
+
+h1. object sizing in a container
+object-contain = Resize an element’s content to stay contained within its container using .object-contain.
