@@ -7,6 +7,7 @@ import { AiOutlineClose } from 'react-icons/ai';
 
 
 const Navbar = () => {
+	const [toggle, setToggle] = useState(false);
 	return (
 		<nav className="w-full flex py-6 justify-center items-center navbar">
 			<img src={logo} alt="blabla" className="w-[1024px] h-[32px]" />
@@ -14,14 +15,18 @@ const Navbar = () => {
 				{navLinks.map((nav,index) => (
 					<li 
 					key={nav.id}
-					className={'font-poppins font-normal cursor-pointer text-[16px] text-white'}>
-						<a href={`${nav.id}`}>
+					className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length-1?`mr-0`:`mr-10`} text-white`}>
+						<a href={`#${nav.id}`}>
 							{nav.title}
 						</a>
 					</li>
 				))}
 			</ul>
-		</nav>	
+
+			<div className='sm:hidden flex flex-1 justify-end items-center'>
+				<img src={toggle ? close : menu} alt="menu"/>
+			</div>
+		</nav>	 
 	);
 }
 
