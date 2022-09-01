@@ -20,3 +20,6 @@ h1. padding
 
 h1. object sizing in a container
 object-contain = Resize an element’s content to stay contained within its container using .object-contain.
+
+h1. Text
+* leading-[23px] = line-height: 23px = space between lines
