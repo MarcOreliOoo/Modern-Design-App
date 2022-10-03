@@ -10,7 +10,7 @@ const CTA = () => (
 			<p className={`${styles.paragraph} max-w-[270px] mt-5 font-poppins font-normal`}>blablablazdqdsesgisegisef,fgroksookseg kkseofkkqkddkoeggegsgegse</p>
 		</div>
 		<div className={`${styles.flexCenter} sm:ml-10 ml-0 sm:mt-0 mt-10`}>
-			<Button styles="rounded-[10px]" />
+			<Button astyle="rounded-[10px]" />
 		</div>
 	</section>
 )

@@ -9,7 +9,7 @@ const CardDeal = () => (
 			<p className={`${styles.paragraph} max-w-[470px] mt-5`}>
 				blablablabla lorem ipsum blabla
 			</p>
-			<Button styles="mt-10 rounded-[10px]" />
+			<Button astyle="mt-10 rounded-[10px]" />
 		</div>
 		<div className={layout.sectionImg}>
 			<img src={card} alt="card" className='w-[100%] h-[100%]' />
